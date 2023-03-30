@@ -1,1 +1,30 @@
 测试文
+dasdasd
+vcwvw<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app"></div>
+    <template id="myapp">
+      <div>{{message}}</div>
+    </template>
+    <script>
+      const app = {
+        template: '#myapp',
+        data() {
+          return {
+            message: 'hello world!',
+          }
+        },
+        methods: {},
+      }
+      Vue.createApp(app).mount('#app')
+    </script>
+  </body>
+</html>
